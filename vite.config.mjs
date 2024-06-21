@@ -20,7 +20,7 @@ export default defineConfig({
     createHtmlPlugin({
       inject: {
         data: {
-          BASE_URL: process.env.NODE_ENV === 'production' ? '/jeffreychen.ha/' : '/',
+          BASE_URL: process.env.NODE_ENV === 'production' ? '/testweb/' : '/',
         },
       },
     }),
@@ -28,5 +28,5 @@ export default defineConfig({
   build: {
     outDir: 'build',
   },
-  base: process.env.NODE_ENV === 'production' ? '/jeffreychen.ha/' : '/',
+  base: process.env.NODE_ENV === 'production' ? '/testweb/' : '/',
 });
